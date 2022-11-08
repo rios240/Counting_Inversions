@@ -21,14 +21,14 @@ def read_array(filename):
 #
 # Return value: number of inversions
 def count_inversions(in_list):
-    print("Current List: {}".format(in_list))
+    ##print("Current List: {}".format(in_list))
     invCount = 0
     if len(in_list) > 1:
         midIndex = len(in_list)//2
         l_list = in_list[:midIndex]
         r_list = in_list[midIndex:]
-        print("Left List: {}".format(l_list))
-        print("Right List: {}".format(r_list))
+        ##print("Left List: {}".format(l_list))
+        ##print("Right List: {}".format(r_list))
         
         
         invCount += count_inversions(l_list)
@@ -64,8 +64,8 @@ def merge_i(l_list, r_list, in_list):
         in_list[k] = r_list[j]
         j += 1
         k += 1
-    print("Left and Right Merged: {}".format(in_list))
-    print("Inversion Count: {}".format(invCount))
+    ##print("Left and Right Merged: {}".format(in_list))
+    ##print("Inversion Count: {}".format(invCount))
     return invCount
 
 
